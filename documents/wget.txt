@@ -1,0 +1,9 @@
+wget --tries 10 -N --continue --progres=bar --force-directories --no-check-certificate --recursive --convert-links --mirror --page-requisites --strict-comments --execute robots="off" {url}
+
+Because wget cannot see all the content behind JS and CSS, you also should insert links on this content yourself. You can found links to images and other content in browser's webpage source code. 
+
+As example, to download my website, you should also download this CSS stylesheets:
+
+https://danielsblog.neocities.org/styles/themes/default.css
+https://danielsblog.neocities.org/styles/themes/monokai.css
+https://danielsblog.neocities.org/styles/themes/christmas.css

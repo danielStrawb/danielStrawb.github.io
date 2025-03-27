@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="../images/icon/tree.png" type="image/x-icon" />
+	<link rel="stylesheet" href="../styles/style.css" />
+	<title>Making a local APT repository with Debian ISO</title>
+</head>
+<body>
+	<a href="../index.html">Back to homepage</a>
+	<h1>Making a local APT repository with Debian ISO</h1>
+	<p>In this guide, i show you, how you can easily become independent from APT repositories from Internet, having only Debian or Devuan ISO-file.</p>
+    <h2>Downloading</h2>
+    <p>I show this on Devuan, because it's having a <a href="https://www.devuan.org/get-devuan">DESKTOP</a> image, with 4 GB of packages.</p>
+    <h2>Preparing enviroment</h2>
+    <p>We are need to mount this ISO. If you have a free USB Media, you can write Devuan on it, with <code>dd</code>, but you can just write <details><code>mount ./*Path to ISO* ./*directory to mount*</code></details> <br> And, that's all.</p>
+    <h2>Using as repository</h2>
+    <p>And, the last, that we need - it's write path to /etc/apt/sources.list. Write something like this: <details><code>deb [trusted=yes] file:/*Path to mount directory* chimaera main contrib</code></details> <br> It should like something like that: <code>deb [trusted=yes] file:/media/cdrom chimaera main contrib</code>.<br>Now, updating with <code>sudo apt update</code>. And, now you can disable other repos.</p>
+    <img src="../images/synaptic.png" alt="Synaptic Screenshot">
+    <p>4700+ Packages with few DEs, and other software, enought to just use computer, all other can be compiled from source.</p>
+    <h4>
+	  Written:  2023<br /> 
+	  Last edit: 23.06.2024
+  	</h4>
+    </body>
+</body>
+</html>

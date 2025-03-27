@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="../images/icon/tree.png" type="image/x-icon" />
+	<link rel="stylesheet" href="../styles/style.css" />
+	<title>Fun exerises for programmers</title>
+</head>
+<body>
+	<a href="../index.html">Back to homepage</a>
+	<h1>Fun exerises for programmers</h1>
+	<p>I think, that it's useful to take some easy exercises, for better understanding of algorithnms, and programming ways. So, i like to make some exercises for yourself, when I am learn something, and here is some of them:</p>
+	
+	<h3>Day of the week</h3>
+	<p>You are need to make some function, that takes argument 'day', and return array with days of the week, starting from given day. Example:</p>
+		<ul>
+			<li>dayOfTheWeek('Friday') -> ["Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednsday", "Thursday"]</li>
+		</ul>
+	<details>
+		<pre>
+	def dayOfTheWeek(day: 'string'):
+		week = ["Monday", "Tuesday", "Wednsday", "Thursday",
+				 "Friday", "Saturday", "Sunday"]
+		index = week.index(day)
+		
+		# Days from index to end of array + Days from start of array to index 
+		
+		return week[index:] + week[:index] 
+	
+	# ['Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednsday', 'Thursday']	
+	print(dayOfTheWeek('Friday')) 
+		</pre>
+	</details>
+	
+	<p>Sometimes it's really useful algorithm, like it's used in my web-application for weather.</p>
+	
+	<h3>Windows 95 Product key validator</h3>
+	<p>This is a famous fact, that Microsoft made really simple validation algorithm for their old software, like Microsoft Windows and Office. So, i think it's a great chance to make program, that validate, or generate keys.</p>
+	
+	<p>All you need is explained in this <a href='https://gurney.dev/posts/mod7/'>article</a>, but if in short, any key, that in sum of it's digits gives (keysum MOD 7 = 0) is valid.</p>
+	
+	<p>You also can make a GUI interface, like i do for my validator: <a href='https://github.com/daniel5551/Win95Validator'>GitHub</a>.</p>
+	
+	<h3>SQL</h3>
+	<p>SQL is not necessary for today's programming. Anyway, it's funny, that this language first of all being created for average users of computers, that work in companies, but not programmers. So it's also good to try make some things with it.</p>
+	<p>You can learn a basic SQL on <a href="https://docs.python.org/3/library/sqlite3.html">Python Docs</a> and <a href="https://www.sqlite.org/docs.html">SQLite Docs</a>.</p>
+	<ol>
+		<li>Create a simple table, and give it name, that you want. Make at lease three rows - id (autoincrement), name (string), and status (string). You also can make some more fields, if you want.
+		<li>Add the main user, with status "Owner", and a few other users, with different status.</li>
+		<li>Now, when you have a little database, think about, how would you do to use it, and where. Try to make some ideas, like banking, etc...</li>
+		<li>Select all users, and sort them, or take only users with "user" status, take only the users, whose id are not greater, than 5.</li>
+		<li>Make some program, that uses SQL (The easiest way - use SQLite) as it's engine for data processing. Take care about security, like split passwords by hash and salt, and store them in separated field.</li> 
+	</ol>
+	
+	<h3>Regexp</h3>
+	<p>It's also can be good to just understand, how RegExp works. You can find good tutorial on <a href="https://docs.python.org/3/howto/regex.html">Python HOWTO</a>, and <a href="https://en.wikipedia.org/wiki/Regular_expression">Wikipedia</a>.</p>
+	<ol>
+		<li>Find all in text "acatdcatocatgc", exclude "cat".</li>
+	</ol>
+	
+	<h3>CSV Reader</h3>
+	<p><a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> - it's simple tables format, and i think, it's a good thing to try create your own reader. Example CSV file looks like this:</p>
+	<details>
+	<pre>
+  ID,Product,Price,Notes,
+  0,Banan,15,,
+  1,Pineapple,30,,
+  2,Mango,25,,
+  3,"Plush Toy",70,,
+  4,Tea,100,"The best drink in the world!",
+	</pre>
+	Quotes and delimiter can be replaced by any other character, like tabulation, underscore, and etc... <br />
+	
+	In result, you should have output like this:
+	<pre>
+  ['ID', 'Product', 'Price', 'Notes']
+  ['0', 'Banan', '15', '']
+  ['1', 'Pineapple', '30', '']
+  ['2', 'Mango', '25', '']
+  ['3', 'Plush Toy', '70', '']
+  ['4', 'Tea', '100', 'The best drink in the world!']
+	</pre>
+	</details>
+	
+	As bonus, you can create function, that converts data from this file to SQL database.
+	<h4>
+	  Written:  2023<br /> 
+	  Last edit: 23.06.2024
+  	</h4>
+</body>
+</html>

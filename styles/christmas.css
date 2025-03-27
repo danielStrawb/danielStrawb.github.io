@@ -1,0 +1,23 @@
+body{
+  background-color: #eceff1;
+}
+
+h1{
+  color: #bb2528;
+}
+
+h2{
+  color: #ea4630;
+}
+
+h3{
+  color: #146b3a;
+}
+
+h4{
+  color: #165b33;
+}
+
+a:link{
+  color: #f8b229;
+}

@@ -1,0 +1,29 @@
+body{
+  background-color: #2e2e2e;
+}
+
+/* Headers */
+h1{
+  color: #e87d3e;
+}
+
+h2{
+  color: #e5b567;
+}
+
+h3{
+  color: #9e86c8;
+}
+
+p{
+  color: #d6d6d6;
+}
+
+/* Links */
+a{
+  color: #e87d3e;
+}
+
+li{
+  color: #b05279;
+}

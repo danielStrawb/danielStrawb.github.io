@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<title>TTY, or a good alternative ot window managers</title>
+	<link href="../static/style.css" rel="stylesheet">
+    </head>
+    <body BGCOLOR="#ECEFF1">
+    <a href="../index.html">back to homepage</a>
+    <center><h1>TTY, or a good alternative to window managers</h1></center>
+    <p>Recently i said my blog, that i want to try TTY, as alternative to window managers, anud ise Xorg only whem it's need. Soo... I show you some useful things. To use it, just press Alt+Ctrl+F(1/6)</p>
+    <center><h1>It's like workplaces</h1></center>
+    <p>You can use it like workplaces, and combine with tmux, to cmake effect of tiling window-managers, or just separate workplaces for fun, work, and something like thiss, like i do this in my WindowMaker.</p>
+    <center><h1>Sometimes you don't need window manager</h1></center>
+    <p>Programs, like <code>mpv</code> and <code>links</code> (in graphical mode), and others can run yourself in clear Xsession, without window manager, it's good, if you want a maximum minimalism, you don't need to run window manager, so your computer require less resources, there are list of software, that run yourself in clear Xorg, that i found:</p>
+    <li>mpv</li>
+    <li>links (to open a new tap, call "open new window" in context menu, and switch by tabs with Alt+(1-9), and close window with "q")</li>
+    <li>ffplay</li>
+    <li>OpenTTD</li>
+    <li>And others</li>
+    <center><h1>As way to make minimal ecosystem</h1></center>
+    <p>With clear native tty, you can make a habit of using only applications, that give you only useful and important information, and run Xorg only when need to play videogame, or run applications, like XScreenSaver, or XSnow, to make winter on you monitor :D</p>
+    <center><h1>Enabling UTF-8</h1></center>
+    <p>To enable UTF-8 an TTY, type <code>unicode_start</code> in terminal, you can also automize this, by add this command in <code>.bashrc</code></p>
+    <center><h1>What about other keyboard layouts?</h1></center>
+    <p><code>loadkeys</code>, the only way to use another layouts in TTY, but it's require root, so you can do it manualy, by logining to root, and than execute <code>loadkeys ru</code>(as example), or add to /etc/rc.d/rc.local the same <code>loadkeys ru</code>, to have it done with startup. I can switch it with CTRL+SHIFT, and in my regular Xsrssion, but i don't know, is it's takes the same keys from XSession, or CTRL+SHIFT works by default.</p>
+    </body>
+</html>
